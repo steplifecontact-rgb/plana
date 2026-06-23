@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plana 利用規約</title>
+<style>
+  :root {
+    --coral: #FF6B47;
+    --coral-dark: #E0593A;
+    --cream: #FAF7F2;
+    --cream-deep: #F2EDE4;
+    --text: #2C2C2C;
+    --text-light: #6B6B6B;
+    --border: #E5E0D5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 0;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+    color: white;
+    padding: 60px 24px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: var(--cream);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 60%);
+  }
+
+  .logo {
+    font-size: 14px;
+    letter-spacing: 4px;
+    opacity: 0.9;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .header-sub {
+    margin-top: 12px;
+    font-size: 14px;
+    opacity: 0.85;
+  }
+
+  main {
+    max-width: 760px;
+    margin: -20px auto 0;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .meta {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-light);
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+  .meta-row + .meta-row {
+    border-top: 1px solid var(--border);
+  }
+
+  .meta-label {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .intro {
+    background: white;
+    border-left: 4px solid var(--coral);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 28px 28px 24px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+  }
+
+  h2 {
+    font-size: 18px;
+    color: var(--coral-dark);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--cream-deep);
+    display: flex;
+    align-items: center;
+  }
+
+  .article-num {
+    background: var(--coral);
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-right: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  ol, ul {
+    padding-left: 24px;
+    margin: 8px 0 12px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  ul li::marker {
+    color: var(--coral);
+  }
+
+  .contact-section {
+    background: linear-gradient(135deg, #FFF5F2 0%, #FFEBE5 100%);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .contact-section h2 {
+    border-bottom: none;
+    justify-content: center;
+    padding-bottom: 8px;
+  }
+
+  .email {
+    display: inline-block;
+    color: var(--coral-dark);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 8px 0;
+    text-decoration: none;
+    padding: 8px 20px;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid var(--coral);
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 16px;
+    color: var(--text-light);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+    background: var(--cream-deep);
+  }
+
+  .footer-app {
+    font-weight: 600;
+    color: var(--coral-dark);
+  }
+
+  @media (max-width: 600px) {
+    header { padding: 48px 20px 70px; }
+    h1 { font-size: 24px; }
+    main { padding: 32px 16px 60px; }
+    section { padding: 22px 20px 18px; }
+    .meta-row { flex-direction: column; }
+    .meta-row + .meta-row { margin-top: 6px; padding-top: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">PLANA</div>
+  <h1>利用規約</h1>
+  <div class="header-sub">Terms of Service</div>
+</header>
+
+<main>
+
+  <div class="meta">
+    <div class="meta-row">
+      <span class="meta-label">アプリ名</span>
+      <span>Plana（プラナ）</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">運営者</span>
+      <span>成瀬 璃雄</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">制定日</span>
+      <span>2026年6月23日</span>
+    </div>
+    <div class="meta-row">
+      <span class="meta-label">最終更新日</span>
+      <span>2026年6月23日</span>
+    </div>
+  </div>
+
+  <div class="intro">
+    本規約は、成瀬 璃雄（以下「運営者」といいます）が提供するiOSアプリケーション「Plana」（以下「本サービス」といいます）の利用条件を定めるものです。本サービスをご利用いただくすべての方（以下「ユーザー」といいます）は、本規約に同意の上、本サービスをご利用ください。
+  </div>
+
+  <section>
+    <h2><span class="article-num">第1条</span>適用</h2>
+    <p>本規約は、ユーザーと運営者との間の本サービスの利用に関する一切の関係に適用されます。</p>
+    <p>運営者が本サービス上で随時掲載する個別規定やガイドライン等は、本規約の一部を構成するものとし、本規約と個別規定の内容に齟齬がある場合は、個別規定が優先されるものとします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第2条</span>定義</h2>
+    <p>本規約において使用する用語の定義は以下のとおりです。</p>
+    <ol>
+      <li>「本サービス」とは、運営者が提供するiOSアプリ「Plana」およびこれに関連するすべての機能をいいます。</li>
+      <li>「ユーザー」とは、本サービスを利用するすべての個人をいいます。</li>
+      <li>「アカウント」とは、本サービスの利用にあたりユーザーが取得する登録情報をいいます。</li>
+      <li>「投稿コンテンツ」とは、ユーザーが本サービスを通じてアップロード・送信する写真、動画、テキスト、その他一切の情報をいいます。</li>
+      <li>「友達」とは、本サービス上で相互フォロー関係にあるユーザー同士を指します。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第3条</span>利用登録</h2>
+    <p>本サービスの利用を希望する者は、Apple IDによるサインインを通じて利用登録を行うものとします。</p>
+    <p>運営者は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあり、その理由については一切の開示義務を負わないものとします。</p>
+    <ol>
+      <li>利用登録の申請に際して虚偽の事項を届け出た場合</li>
+      <li>本規約に違反したことがある者からの申請である場合</li>
+      <li>過去に運営者から利用停止または登録抹消の措置を受けた者である場合</li>
+      <li>その他、運営者が利用登録を相当でないと判断した場合</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第4条</span>年齢制限</h2>
+    <p>本サービスは、13歳以上の方を対象としています。13歳未満の方は本サービスを利用することはできません。</p>
+    <p>未成年者が本サービスを利用する場合、必ず保護者の同意を得た上でご利用ください。未成年者が本サービスを利用した場合、保護者の同意があったものとみなします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第5条</span>アカウント管理</h2>
+    <p>ユーザーは、自己の責任において本サービスのアカウント情報を適切に管理するものとします。</p>
+    <p>ユーザーは、いかなる場合にも、アカウントを第三者に譲渡または貸与し、もしくは第三者と共用することはできません。</p>
+    <p>アカウントの管理不十分、使用上の過誤、第三者の使用等によって生じた損害に関する責任はユーザーが負うものとし、運営者は一切の責任を負いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第6条</span>禁止事項</h2>
+    <p>ユーザーは、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
+    <ol>
+      <li>法令または公序良俗に違反する行為</li>
+      <li>犯罪行為に関連する行為</li>
+      <li>運営者、他のユーザー、その他第三者の著作権、商標権、肖像権、プライバシー権、名誉権その他の権利を侵害する行為</li>
+      <li>他のユーザーに対する誹謗中傷、嫌がらせ、ストーキング、脅迫等の迷惑行為</li>
+      <li>無関係な第三者の写真や動画を、当該第三者の同意なくアップロードする行為</li>
+      <li>性的、暴力的、差別的、その他公序良俗に反するコンテンツをアップロードする行為</li>
+      <li>未成年者に有害となる情報を提供する行為</li>
+      <li>本サービスのサーバーまたはネットワークの機能を破壊・妨害する行為</li>
+      <li>本サービスの運営を妨害するおそれのある行為</li>
+      <li>不正アクセスをし、またはこれを試みる行為</li>
+      <li>他のユーザーに関する個人情報等を収集または蓄積する行為</li>
+      <li>不正な目的をもって本サービスを利用する行為</li>
+      <li>本サービスの他のユーザーまたは第三者に不利益、損害、不快感を与える行為</li>
+      <li>他のユーザーになりすます行為</li>
+      <li>本サービスのリバースエンジニアリング、逆コンパイル、逆アセンブル、その他の解析行為</li>
+      <li>本サービスに関連して、反社会的勢力に対して直接または間接に利益を供与する行為</li>
+      <li>営業活動、宣伝、勧誘、その他営利を目的とする行為（運営者が認めたものを除く）</li>
+      <li>その他、運営者が不適切と判断する行為</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第7条</span>投稿コンテンツの取り扱い</h2>
+    <p>ユーザーが本サービスに投稿したコンテンツの著作権は、当該ユーザーに帰属します。</p>
+    <p>ただし、ユーザーは、投稿コンテンツについて、本サービスの提供・運営・改善のために必要な範囲において、運営者および友達関係にある他のユーザーが利用することを許諾するものとします。</p>
+    <p>ユーザーは、投稿コンテンツについて、自らが投稿その他送信することについて適法な権利を有していること、および投稿コンテンツが第三者の権利を侵害していないことについて、運営者に対し表明し、保証するものとします。</p>
+    <p>運営者は、投稿コンテンツが本規約に違反していると判断した場合、事前の通知なくこれを削除することができるものとします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第8条</span>プライバシー</h2>
+    <p>運営者は、ユーザーの個人情報を、別途定める「プライバシーポリシー」に従い、適切に取り扱います。</p>
+    <p>プライバシーポリシーは以下のURLでご確認いただけます。</p>
+    <p style="word-break: break-all;"><a href="https://steplifecontact-rgb.github.io/Plana/" style="color: var(--coral-dark);">https://steplifecontact-rgb.github.io/Plana/</a></p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第9条</span>本サービスの提供の停止等</h2>
+    <p>運営者は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。</p>
+    <ol>
+      <li>本サービスにかかるコンピュータシステムの保守点検または更新を行う場合</li>
+      <li>地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合</li>
+      <li>コンピュータまたは通信回線等が事故により停止した場合</li>
+      <li>本サービスが依存する第三者サービス（Firebase等）の停止または不具合が発生した場合</li>
+      <li>その他、運営者が本サービスの提供が困難と判断した場合</li>
+    </ol>
+    <p>運営者は、本サービスの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第10条</span>利用制限および登録抹消</h2>
+    <p>運営者は、ユーザーが以下のいずれかに該当する場合、事前の通知なく、投稿コンテンツの削除、当該ユーザーに対する本サービスの全部もしくは一部の利用制限、またはアカウントの削除を行うことができるものとします。</p>
+    <ol>
+      <li>本規約のいずれかの条項に違反した場合</li>
+      <li>登録事項に虚偽の事実があることが判明した場合</li>
+      <li>運営者からの連絡に対し、相当期間返答がない場合</li>
+      <li>本サービスについて、最終のログインから1年以上利用がない場合</li>
+      <li>その他、運営者が本サービスの利用を適当でないと判断した場合</li>
+    </ol>
+    <p>運営者は、本条に基づき運営者が行った行為によりユーザーに生じた損害について、一切の責任を負いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第11条</span>退会</h2>
+    <p>ユーザーは、本サービス内の所定の退会手続き（アカウント削除）により、いつでも本サービスから退会することができます。</p>
+    <p>退会した場合、ユーザーが本サービスに投稿したコンテンツ、アカウント情報、友達関係等のすべてのデータが削除されます。削除されたデータの復元はできません。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第12条</span>保証の否認および免責事項</h2>
+    <p>運営者は、本サービスに事実上または法律上の瑕疵（安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティなどに関する欠陥、エラーやバグ、権利侵害などを含みます）がないことを明示的にも黙示的にも保証しておりません。</p>
+    <p>運営者は、本サービスに起因してユーザーに生じたあらゆる損害について、運営者の故意または重過失による場合を除き、一切の責任を負いません。</p>
+    <p>運営者は、本サービスに関して、ユーザーと他のユーザーまたは第三者との間において生じた取引、連絡または紛争等について、一切責任を負いません。</p>
+    <p>本サービスの内容として、お出かけプランの作成、写真・動画の共有、ハイライトの作成等を提供しますが、これらのデータの永続的な保存、消失防止については保証されません。ユーザーは、重要なデータについては、自身でバックアップを行うものとします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第13条</span>サービス内容の変更等</h2>
+    <p>運営者は、ユーザーへの事前の通知をもって（ただし、緊急の場合は事後の通知とします）、本サービスの内容を変更、追加または廃止することがあり、ユーザーはこれを承諾するものとします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第14条</span>利用規約の変更</h2>
+    <p>運営者は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。</p>
+    <p>本規約の変更後、本サービスの利用を継続したユーザーは、変更後の規約に同意したものとみなします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第15条</span>通知または連絡</h2>
+    <p>ユーザーと運営者との間の通知または連絡は、運営者の定める方法によって行うものとします。</p>
+    <p>運営者は、ユーザーから運営者が別途定める方式に従った変更届け出がない限り、現在登録されている連絡先が有効なものとみなして当該連絡先へ通知または連絡を行い、これらは発信時にユーザーへ到達したものとみなします。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第16条</span>権利義務の譲渡の禁止</h2>
+    <p>ユーザーは、運営者の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務を第三者に譲渡し、または担保に供することはできません。</p>
+  </section>
+
+  <section>
+    <h2><span class="article-num">第17条</span>準拠法・裁判管轄</h2>
+    <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
+    <p>本サービスに関して紛争が生じた場合には、運営者の住所地を管轄する裁判所を専属的合意管轄とします。</p>
+  </section>
+
+  <div class="contact-section">
+    <h2>お問い合わせ</h2>
+    <p>本規約に関するお問い合わせは、下記の連絡先までお願いいたします。</p>
+    <a href="mailto:steplife.contact@gmail.com" class="email">steplife.contact@gmail.com</a>
+    <p style="font-size: 13px; color: var(--text-light); margin-top: 12px;">運営者: 成瀬 璃雄</p>
+  </div>
+
+</main>
+
+<footer>
+  <div><span class="footer-app">Plana</span> — お出かけプラン共有アプリ</div>
+  <div style="margin-top: 8px;">© 2026 成瀬 璃雄. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
